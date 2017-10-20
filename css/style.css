@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-size: 20px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+
+.logo {
+	display: block;
+	font-family: 'Indie Flower', cursive;
+	font-size: 50px;
+	color: #db4c3f;
+	margin: 20px auto;
+}
+
+.add-task {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 500px;
+	margin: 20px auto;
+}
+
+.add-task input {
+	width: 75%;
+	margin: 0;
+	padding: 10px;
+	border: none;
+	border: 1px solid #f0f0f0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 20px;
+}
+
+.add-task span {
+	width: 25%;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	background-color: #fff;
+	color: #db4c3f;
+	border: 1px solid #db4c3f;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.add-task span:hover {
+	color: #fff;
+	background-color: #db4c3f;
+	-webkit-transition: background 0.5s ease;
+     -moz-transition: background 0.5s ease;
+     -o-transition: background 0.5s ease;
+     transition: background 0.5s ease;
+}
+
+section {
+	position: relative;
+	width: 500px;
+	height: auto;
+	margin: 40px auto;
+	background-color: #fff7b7;
+	box-shadow: -3px 4px 4px rgba(0,0,0,0.2);
+}
+
+section:before {
+	content: "";
+  	position: absolute;
+  	top: 0%;
+  	left: 90%;
+  	width: 0px;
+  	height: 0px;
+  	border-bottom: 50px solid transparent;
+  	border-right: 50px solid #fff;
+  	-webkit-box-shadow: -7px 7px 7px rgba(0,0,0,0.2);
+  	-moz-box-shadow: -7px 7px 7px rgba(0,0,0,0.2);
+  	box-shadow: -7px 7px 7px rgba(0,0,0,0.2);
+}
+
+section:after {
+  	content: "";
+  	position: absolute;
+  	top: 0%;
+  	left: 90%;
+  	width: 0px;
+  	height: 0px;
+  	border-top: 50px solid transparent; 
+  	border-left: 50px solid #fff7b7;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	padding: 20px;
+	list-style-type: none;
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+}
+
+ul li:last-child {
+	border-bottom: none;
+} 
+
+ul li:hover {
+	color: #db4c3f;
+}
+
+ul li.checked {
+	color: #929292;
+    text-decoration: line-through;
+}
